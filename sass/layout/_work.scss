@@ -1,29 +1,32 @@
-.main-what-we-do{
-    padding-bottom: 94px;
-    background-color: #F5F4FA;
-}
-@media screen and (min-width: 1200px) {
-  .main-what-we-do {
+.work {
+  padding-bottom: 94px;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
     display: block;
   }
 }
-.main-what-we-do-list{
-    display: flex;
-}
-.main-what-we-do-list-item {
-    position: relative;
-  }
-.main-what-we-do-list-item:not(:last-child) {
-    margin-right: 30px; 
+
+.work__title {
+  margin-bottom: 50px;
 }
 
+.work-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
+}
 
-.what-we-do-text{
-    width: 100%;
+.work-list__item {
+  position: relative;
+}
+
+.work-list__text {
+  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
-
 
   padding: 27px 0px;
 
@@ -33,6 +36,6 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: var(--white-text-color);
   background-color: rgba(47, 48, 58, 0.8);
 }

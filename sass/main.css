@@ -364,7 +364,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--hero-background-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -374,27 +374,27 @@ img {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desctop.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desctop2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -453,7 +453,6 @@ img {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 @media screen and (min-width: 480px) {
   .hero__btn {
     padding: 10px 32px;
@@ -797,13 +796,10 @@ img {
 
 .footer {
   text-align: center;
-  padding: 60px 0px ;
+  padding: 60px 0px;
   background-color: var(--hero-background-color);
-  
 }
-.footer__contacts-flex{
-  margin-left: 15px;
-}
+
 .footer__flex {
   display: block;
   margin: 0;
@@ -842,9 +838,11 @@ img {
   line-height: 1.71;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-contact__address:hover, .footer-contact__address:focus  {
+
+.footer-contact__address:hover, .footer-contact__address:focus {
   color: var(--accent-color);
 }
+
 .footer-contact__item {
   margin-top: 9px;
 }
@@ -951,15 +949,14 @@ img {
 }
 
 .footer-submit__input {
-  width: 358px;
+  margin-bottom: 20px;
+  width: 100%;
   margin: 0;
   padding: 13px 16px;
-  outline: none;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--hero-background-color);
   color: var(--white-text-color);
-  
 }
 .footer-submit__input::-moz-placeholder {
   font-size: 16px;
@@ -1362,15 +1359,11 @@ textarea:focus {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
-  
-
 }
-.form-checkbox:hover
- + .icon-chek{cursor: pointer;
-
- }
-.form-checkbox:checked
- + .icon-chek {
+.form-checkbox:hover + .icon-chek {
+  cursor: pointer;
+}
+.form-checkbox:checked + .icon-chek {
   background-image: url(../images/icon-check.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -1378,7 +1371,6 @@ textarea:focus {
   background-origin: border-box;
   border-color: var(--accent-color);
   cursor: pointer;
-  
 }
 
 .policy-label {
@@ -1389,7 +1381,6 @@ textarea:focus {
   line-height: 1.14;
   color: var(--secondary-text-color);
 }
-
 @media screen and (max-width: 479px) {
   .policy-label {
     font-size: 10px;

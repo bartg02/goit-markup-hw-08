@@ -1,14 +1,13 @@
 @import './utils/variables';
-
 @import './base/reset';
 @import './base/container';
-@import './base/section';
 
 @import './components/section-title';
 @import './components/logo';
-@import './components/modal';
 
-@import './layout/adress';
+
+
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/features';
@@ -18,3 +17,9 @@
 @import './layout/footer';
 
 @import './portfolio/portfolio';
+@import './components/modal';
+
+
+
+
+
