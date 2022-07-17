@@ -59,7 +59,42 @@
             >
           </li>
         </ul>
-        
+        <button class="menu-open" data-menu-open>
+          <svg class="menu-burger" width="24" height="16">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+          </button>
+        <div class="mob-menu flex is-hidden" data-menu>
+          <div>
+            <button class="menu-close" data-menu-close>
+              <svg class="menu-close" width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link link mob-menu-list__link--current" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link link" href="">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-list__down">
+            <a class="mob-menu-list__tell link" href="tel:+48 111 111 111">
+              +48 111 111 111</a>
+            <a class="mob-menu-list__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <ul class="mob-menu-list__social list">
+              <li class="mob-menu-list__social-item">Instagram</li>
+              <li class="mob-menu-list__social-item">Twitter</li>
+              <li class="mob-menu-list__social-item">Facebook</li>
+              <li class="mob-menu-list__social-item">LinkedIn</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     
@@ -133,7 +168,10 @@
           <ul class="work-list list">
             <li class="work-list__item">
               <img
-                  
+              srcset="
+              ./images/skills/img.jpg 1x,                   
+              ./images/skills/img-2x.jpg 2x
+              "
                   src="images/main/what_we_do/computer_img.jpg"
                   alt="фото ноутбука"
                   width="370"
@@ -142,7 +180,10 @@
             </li>
             <li class="work-list__item">
               <img
-                  
+              srcset="
+              ./images/skills/box.jpg 1x,                   
+              ./images/skills/box-2x.jpg 2x
+              "
                   src="images/main/what_we_do/mobile_img.jpg"
                   alt="фото мобильного"
                   width="370"
@@ -151,7 +192,10 @@
             </li>
             <li class="work-list__item">
               <img
-                  
+              srcset="
+              ./images/skills/tv.jpg 1x,                   
+              ./images/skills/tv-2x.jpg 2x
+              "
                   src="images/main/what_we_do/tablet_img.jpg"
                   alt="John_Doe"
                   width="370"
@@ -167,6 +211,10 @@
           <ul class="team-list list">
             <li class="team-list__item">
               <img
+              srcset="
+                    ./images/mobile-product-designer.jpg 1x,                   
+                    ./images/mobile-product-designer-2x.jpg 2x
+                  "
                   class="photo thumb-team"
                   src="images/main/our_team/img1.jpg"
                   alt="фото Игоря Демьяненко"
@@ -213,6 +261,10 @@
 
             <li class="team-list__item">
               <img
+              srcset="
+                    ./images/mobile-frontend-developer.jpg 1x,                   
+                    ./images/mobile-frontend-developer-2x.jpg 2x
+                  "
                   class="photo thumb-team"
                   src="images/main/our_team/img2.jpg"
               alt="John_Doe2"
@@ -258,6 +310,10 @@
             </li>
             <li class="team-list__item">
               <img
+              srcset="
+                    ./images/mobile-marketing.jpg 1x,                   
+                    ./images/mobile-marketing-2x.jpg 2x
+                  "
                   class="photo thumb-team"
                   src="images/main/our_team/img3.jpg"
               alt="John_Doe3"
@@ -303,6 +359,10 @@
             </li>
             <li class="team-list__item">
               <img
+              srcset="
+                    ./images/mobile-ui-designer.jpg 1x,                   
+                    ./images/mobile-ui-designer-2x.jpg 2x
+                  "
                   class="photo thumb-team"
                   src="images/main/our_team/img4.jpg"
               alt="John_Doe4"
