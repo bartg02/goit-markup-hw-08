@@ -938,20 +938,6 @@ img {
   fill: currentColor;
 }
 
-.footer-submit {
-  margin-left: auto;
-}
-@media (min-width: 768px) {
-  .footer-submit {
-    margin-top: 0px;
-    padding: 0;
-  }
-}
-@media (min-width: 1200px) {
-  .footer-submit {
-    margin-left: 23px;
-  }
-}
 
 .footer-submit__text {
   padding: 20px 0px 10px 0px;
@@ -1019,6 +1005,8 @@ img {
 @media (min-width: 1200px) {
   .footer-submit__btn {
     margin-top: 0px;
+    
+   
   }
 }
 .footer-submit__btn::after {
